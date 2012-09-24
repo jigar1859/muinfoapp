@@ -10,19 +10,8 @@ window.fbAsyncInit = function() {
     });
 
     // Additional initialization code here
-  };
-
-  // Load the SDK Asynchronously
-  (function(d){
-     var js, id = 'facebook-jssdk', ref = d.getElementsByTagName('script')[0];
-     if (d.getElementById(id)) {return;}
-     js = d.createElement('script'); js.id = id; js.async = true;
-     js.src = "//connect.facebook.net/en_US/all.js";
-     ref.parentNode.insertBefore(js, ref);
-   }(document));
-
-
-/*
+	
+	/*
    Check the login staus of the user and authentication status of our app with respect to the user
 	Authorized implies we can access requested user data
  */
@@ -60,7 +49,17 @@ FB.getLoginStatus(function(response) {
   } else {
     // the user isn't logged in to Facebook, redirect user to facebook login page
 	window.top.location="http://www.facebook.com/index.php";
-  }
- });
+  }//response.status
+ });//getLoginStatus
  
+};//fbAsyncInit
+
+ // Load the SDK Asynchronously
+  (function(d){
+     var js, id = 'facebook-jssdk', ref = d.getElementsByTagName('script')[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement('script'); js.id = id; js.async = true;
+     js.src = "//connect.facebook.net/en_US/all.js";
+     ref.parentNode.insertBefore(js, ref);
+   }(document));
  
