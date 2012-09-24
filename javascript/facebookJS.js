@@ -19,6 +19,8 @@ window.fbAsyncInit = function() {
 			FB.api('/me', function(info) {
 				console.log(info);
   			  	console.log(info.name);
+				console.log('First Name:',info.first_name);
+				console.log('Email:',info.email);
 			});
 
 
