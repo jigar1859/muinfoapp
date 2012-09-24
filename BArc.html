@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Information Page</title>
+<link href="jquery-mobile/jquery.mobile-1.0.min.css" rel="stylesheet" type="text/css">
+
+<script src="jquery-mobile/jquery-1.6.4.min.js" type="text/javascript"></script>
+<script src="jquery-mobile/jquery.mobile-1.0.min.js" type="text/javascript"></script>
+
+<!-- Code For Back Button Start's Here-->
+<script type="text/javascript" >
+	$(document).bind("mobileinit",function(){
+		$.mobile.page.protoype.options.addBackBtn="true";
+		});
+</script>
+<!-- Code For Back Button Ends's Here-->
+
+</head>
+
+<body>
+
+<!--FRONT PAGE START-->
+<div id="frontpage" data-role="page" data-theme="a">
+	<div data-role="header" data-theme="a">
+   
+    <a href="Bachelors.html" rel="external" data-role="button" data-icon="arrow-l">Back</a>
+   
+    <a href="index.php" rel="external" data-role="button" data-icon="home" >Home</a>
+		<h1 align="center">Bachelors Of Architecture</h1>
+	</div>
+    
+<div data-role="content" data-theme="c" >	
+      
+      <div>
+      <p>
+    <ul data-role="listview" data-inset="true" data-theme="a">
+    <li><a href="#BArc_FY">First Year</a></li>	    
+    </ul>
+    </p>
+    
+  </div>
+ </div>
+	
+<div data-role="footer">
+		<h4>&copy; jigar1859</h4>
+	</div>
+    
+</div>
+<!--FRONT PAGE END-->
+
+<!--BArc FY START-->
+<div id="BArc_FY" data-role="page" data-theme="a">
+	<div data-role="header" data-theme="a">
+   
+    <a href="#frontpage" data-role="button" data-icon="arrow-l">Back</a>
+   
+    <a href="index.php" rel="external" data-role="button" data-icon="home" >Home</a>
+		<h1 align="center">Bachelors Of Architecture F.Y.</h1>
+	</div>
+    
+<div data-role="content" data-theme="c">	
+      
+    
+    <ul data-role="listview" data-inset="true" data-theme="a" data-filter="true" data-filter-placeholder="Enter Your Subject Name Here" data-filter-theme="c">
+   <li><a href="https://docs.google.com/file/d/0B63v9roHkvUXNU9aZHRLbmZWNG8/preview" rel="external">B. Arch Sem 1 & 2
+</a>
+<a href="http://dl.dropbox.com/u/91693936/Mumbai%20University%202012%20Syllabus/Bachelors/BArc/FY/B.%20Arch%20Sem%201%20&%202.pdf" rel="external" data-role="button" data-icon="arrow-d" data-theme="a">Download</a></li>		    
+    </ul>
+   
+ </div>
+	
+<div data-role="footer">
+		<h4>&copy; jigar1859</h4>
+	</div>
+    
+</div>
+<!--BArc FY END-->
+
+
+
+</body>
+</html>

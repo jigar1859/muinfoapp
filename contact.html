@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<link href="jquery-mobile/jquery.mobile-1.0.min.css" rel="stylesheet" type="text/css">
+<link href="custom.css" rel="stylesheet" type="text/css">
+<script src="jquery-mobile/jquery-1.6.4.min.js" type="text/javascript"></script>
+<script src="jquery-mobile/jquery.mobile-1.0.min.js" type="text/javascript"></script>
+
+<!-- Code For Back Button Start's Here-->
+<script type="text/javascript" >
+	$(document).bind("mobileinit",function(){
+		$.mobile.page.protoype.options.addBackBtn="true";
+		});
+</script>
+<!-- Code For Back Button Ends's Here-->
+
+
+</head>
+
+<body>
+
+<div id="contactPage" data-role="page" data-theme="a">
+	<div data-role="header">
+    
+     <a href="index.php#frontpage" rel="external" data-role="button" data-icon="arrow-l">Back</a>
+   
+    <a href="index.php" rel="external" data-role="button" data-icon="home" >Home</a>
+    
+		<h1>Want to Get in Touch?</h1>
+	</div>
+	
+    <div data-role="content">
+      <p>&nbsp;</p>
+      
+      <p>
+        <b>Contact Address:</b><br><br>
+        Registrar<br>
+        University of Mumbai<br>
+        M.G. Road<br>
+        Fort<br>
+        Mumbai-400032.</p>
+      
+       <p>&nbsp;</p>
+      
+       <p><b>For General Enquiry Contact:</b></p>
+       
+       <p><b>Fort Campus:</b><br>
+       <p>022-22708700 <a href="tel:02222708700" data-role="button" data-inline="true">Call</a><br></p><br>
+       
+	   
+       <br><b>Kalina Campus:</b><br>
+        <p>022-26543000 <a href="tel:2226543000" data-role="button" data-inline="true">Call</a><br></p>
+        <p>022-26543300 <a href="tel:02226543300" data-role="button" data-inline="true">Call</a><br></p>
+       
+   
+    </div>
+    
+    <div data-role="footer">
+	  <h4>&copy; jigar1859</h4>
+	</div>
+</div>
+
+
+</body>
+</html>

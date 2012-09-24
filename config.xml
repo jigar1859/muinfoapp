@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<widget xmlns = "http://www.w3.org/ns/widgets"
+    xmlns:gap = "http://phonegap.com/ns/1.0"
+    id        = "com.jigar1859.muInfoApp"
+    version   = "1.2.0">
+
+<name>University Of Mumbai Info App </name>
+
+<description>
+
+* This is an Application to preview and download syllabus for courses offered by Mumbai University as per Semester  Patter from year 2012
+
+** To Preview a syllabus file in google docs preview click/touch  on the button with file name
+
+*** To directly download the file to sdcard click/touch on the down arrow present on the right of every 	button 
+</description>
+
+<author href="http://www.facebook.com/jigar1859" email="jigar1859@gmail.com">
+jigar1859
+</author>
+<gap:splash src="images/univ.png" />
+<icon src="images/appIcon.png" />
+
+</widget>

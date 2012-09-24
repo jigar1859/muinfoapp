@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Photos Page</title>
+<link href="jquery-mobile/jquery.mobile-1.0.min.css" rel="stylesheet" type="text/css">
+<script src="jquery-mobile/jquery-1.6.4.min.js" type="text/javascript"></script>
+<script src="jquery-mobile/jquery.mobile-1.0.min.js" type="text/javascript"></script>
+</head>
+<!-- Code For Back Button Start's Here-->
+<script type="text/javascript" >
+	$(document).bind("mobileinit",function(){
+		$.mobile.page.protoype.options.addBackBtn="true";
+		});
+</script>
+<!-- Code For Back Button Ends's Here-->
+
+<body>
+<div id="photosPage" data-role="page" data-theme="a">
+	
+    <div data-role="header">
+	 <a href="index.php#frontpage" rel="external" data-role="button" data-icon="arrow-l">Back</a>
+   
+    <a href="index.php" rel="external" data-role="button" data-icon="home" >Home</a>
+		<h1 align="center">Information Page </h1>
+		<h1>Photos Page</h1>
+	</div>
+	
+  <div data-role="content">
+     
+   <!--START JUICEBOX EMBED-->
+<script src="photoGallery/jbcore/juicebox.js"></script>
+<script>
+new juicebox({
+containerId : "juicebox-container",
+galleryWidth: "100%",
+galleryHeight: "100%",
+backgroundColor: "rgba(0,0,0,1)",
+baseUrl : 'photoGallery/',
+
+});
+</script>
+<div id="juicebox-container"></div>
+<!--END JUICEBOX EMBED-->
+   
+</div>    
+    
+  <div data-role="footer">
+    <h4>&copy; jigar1859</h4>
+  </div>
+</div>
+
+</body>
+</html>

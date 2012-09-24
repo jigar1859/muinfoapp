@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Information Page</title>
+<link href="jquery-mobile/jquery.mobile-1.0.min.css" rel="stylesheet" type="text/css">
+
+<script src="jquery-mobile/jquery-1.6.4.min.js" type="text/javascript"></script>
+<script src="jquery-mobile/jquery.mobile-1.0.min.js" type="text/javascript"></script>
+
+<!-- Code For Back Button Start's Here-->
+<script type="text/javascript" >
+	$(document).bind("mobileinit",function(){
+		$.mobile.page.protoype.options.addBackBtn="true";
+		});
+</script>
+<!-- Code For Back Button Ends's Here-->
+
+</head>
+
+<body>
+
+<div id="frontpage" data-role="page" data-theme="a">
+	<div data-role="header" data-theme="a">
+   
+    <a href="courses.html" rel="external" data-role="button" data-icon="arrow-l">Back</a>
+   
+    <a href="index.php" rel="external" data-role="button" data-icon="home" >Home</a>
+		<h1 align="center">Master's</h1>
+	</div>
+    
+<div data-role="content" data-theme="c">	
+      
+      <div>
+      <p>
+  <ul data-role="listview" data-inset="true" data-theme="a">
+   <li><a href="MCom.html" rel="external">M.Com</a></li>	    
+<li><a href="MPhil.html" rel="external">M.Phil</a></li>
+<li><a href="MA.html" rel="external">MA</a></li>
+<li><a href="MA-MSc.html" rel="external">MA-MSc</a></li>	    
+<li><a href="MArc.html" rel="external">MArc</a></li>
+<li><a href="ME.html" rel="external">ME</a></li>
+<li><a href="MSc.html" rel="external">MSc</a></li>	    
+<li><a href="OtherMasters.html" rel="external">Other</a></li>
+      
+      
+      
+    </ul>
+    </p>
+    
+  </div>
+ </div>
+	
+<div data-role="footer">
+		<h4>&copy; jigar1859</h4>
+	</div>
+    
+</div>
+
+
+</body>
+</html>
