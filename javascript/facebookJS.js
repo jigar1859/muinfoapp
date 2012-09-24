@@ -1,9 +1,9 @@
 <!-- To bring in Facebook SDK-->
 window.fbAsyncInit = function() {
     FB.init({
-      appId      : 'YOUR_APP_ID', // App ID
+      appId      : '418666514860177', // App ID
 	  frictionlessRequests : true,
-      channelUrl : '//WWW.YOUR_DOMAIN.COM/channel.php', // Channel File
+      channelUrl : '//sultry-spire-1174.herokuapp.com/channel.php', // Channel File
       status     : true, // check login status
       cookie     : true, // enable cookies to allow the server to access the session
       xfbml      : true  // parse XFBML
